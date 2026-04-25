@@ -1,5 +1,5 @@
 <!--# kimmyridout.github.io-->
 
-# My Portfolio
+### My Portfolio
 
 [View my project README](README.md)

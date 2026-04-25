@@ -58,7 +58,9 @@ body {
 
 /* LINKS */
 .nav-links {
-  list-style: none;
+  list-style: none;   /* removes bullets */
+  margin: 0;          /* removes default spacing */
+  padding: 0;         /* removes indent */
   display: flex;
   gap: 20px;
 }

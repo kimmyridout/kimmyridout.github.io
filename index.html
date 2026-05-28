@@ -1,0 +1,314 @@
+<!-- HOME LANDING PAGE  -->
+ <!-- index.html is my homepage/main landing page. It contains:
+    hero section
+    about
+    featured projects
+    skills
+    links to notes/resume/contact-->
+<!-- reference style.css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kim Ridout | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="logo">Portfolio</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <!-- <a href="notes.html">Notes</a> -->
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <button id="theme-toggle">🌙 Dark Mode</button>
+
+</header>
+
+<!-- page container start -->
+<div class="page-container">
+
+ <!-- HERO SECTION -->
+<section class="hero">
+
+  <div class="hero-left">
+
+    <h1>Kim Ridout</h1>
+
+    <h3>
+      Environmental Systems Professional Transitioning into Data Engineering
+    </h3>
+
+    <p>
+      Public-sector and sustainability professional with experience coordinating
+      environmental reporting, stakeholder-driven planning initiatives,
+      and structured decision-support systems.
+    </p>
+
+    <p>
+      Currently completing the
+      <strong>MIT xPRO Data Engineering Program</strong>
+      with hands-on work in Python, SQL, APIs, ETL workflows,
+      databases, and cloud-based data systems.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn" href="assets/docs/resume_260527.pdf" target="_blank">
+        View Resume
+      </a>
+
+      <a class="btn btn-outline"
+         href="assets/docs/resume_260527.pdf"
+         download>
+        Download Resume
+      </a>
+
+      <a class="btn btn-outline" href="experience.html">
+        View Experience
+      </a>
+    </div>
+
+  </div>
+
+  <div class="hero-right">
+
+    <img src="assets/images/profile.jpg"
+         class="profile-pic-large" />
+
+    <div class="quick-card">
+      <h4>Current Focus</h4>
+
+      <p>
+        Data Engineering • Environmental Systems • ETL • APIs • SQL • Public Sector Analytics
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+ <!-- FEATURED INITIATIVES -->
+<section class="section">
+
+  <h2>Featured Initiatives & Projects</h2>
+
+  <div class="card-grid">
+
+    <!-- WATER WAYS -->
+    <div class="card">
+
+      <h3>Water Ways Report</h3>
+
+      <p>
+        Regional water resilience and sustainability initiative supporting
+        long-term environmental planning and public engagement.
+      </p>
+
+      <ul>
+        <li>Coordinated technical consultants and stakeholder workflows</li>
+        <li>Reviewed and refined final reporting content</li>
+        <li>Integrated stakeholder feedback into planning recommendations</li>
+      </ul>
+
+      <a
+        href="https://engage.sandiegocounty.gov/water-ways-report"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Live Initiative →
+      </a>
+
+    </div>
+
+    <!-- FOOD JUSTICE -->
+    <div class="card">
+
+      <h3>Food Justice Community Action Plan</h3>
+
+      <p>
+        Countywide food systems initiative focused on equitable food access,
+        stakeholder engagement, and community-informed planning.
+      </p>
+
+      <ul>
+        <li>Synthesized public engagement into structured thematic insights</li>
+        <li>Supported policy and implementation planning workflows</li>
+        <li>Integrated qualitative community data into planning systems</li>
+      </ul>
+
+      <a
+        href="https://engage.sandiegocounty.gov/food-justice-community-action-plan"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Live Initiative →
+      </a>
+
+    </div>
+
+    <!-- DATA PROJECT -->
+    <div class="card">
+
+      <h3>Technical Data Projects</h3>
+
+      <p>
+        Hands-on projects developed through MIT xPRO Data Engineering coursework
+        and independent learning.
+      </p>
+
+      <ul>
+        <li>Python data workflows</li>
+        <li>SQL and database systems</li>
+        <li>REST APIs and ETL pipeline development</li>
+      </ul>
+
+      <a href="projects.html">
+        View Technical Projects →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DATA SYSTEMS -->
+<section class="section">
+
+  <h2>Data Systems & Database Technologies</h2>
+
+  <p>
+    Experience working with relational, NoSQL, distributed, and cloud-hosted databases
+    through MIT xPRO coursework, backend development projects,
+    and applied data engineering exercises.
+  </p>
+
+  <div class="card-grid">
+
+    <!-- RELATIONAL -->
+    <div class="card">
+
+      <h3>Relational Databases</h3>
+
+      <ul>
+        <li>MySQL</li>
+        <!-- <li>PostgreSQL</li> -->
+      </ul>
+
+      <p>
+        Structured schemas, SQL queries, joins,
+        normalization, and transactional workflows.
+      </p>
+
+    </div>
+
+    <!-- NOSQL -->
+    <div class="card">
+
+      <h3>NoSQL & Document Databases</h3>
+
+      <ul>
+        <li>MongoDB</li>
+        <li>Firebase</li>
+      </ul>
+
+      <p>
+        Flexible schema design, JSON-style document storage,
+        and cloud-hosted application data workflows.
+      </p>
+
+    </div>
+
+    <!-- DISTRIBUTED -->
+    <div class="card">
+
+      <h3>Distributed & In-Memory Systems</h3>
+
+      <ul>
+        <li>Cassandra</li>
+        <li>Redis</li>
+      </ul>
+
+      <p>
+        Distributed scalability concepts, high-speed caching,
+        and key-value data architecture fundamentals.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+<!--  -->
+
+ <!-- SKILLS SNAPSHOT -->
+<section class="section">
+
+  <h2>Technical Skills & Systems</h2>
+
+  <ul class="skills-inline">
+    <li>Python</li>
+    <li>SQL</li>
+    <li>REST APIs</li>
+    <li>ETL Pipelines</li>
+    <!-- <li>PostgreSQL</li> -->
+    <li>Data Modeling</li>
+    <li>Git & GitHub</li>
+    <li>Flask</li>
+    <li>Cloud Concepts</li>
+    <li>Environmental Reporting Systems</li>
+    <li>Stakeholder Data Integration</li>
+    <li>Executive Reporting</li>
+    <li>MySQL</li>
+    <li>MongoDB</li>
+    <li>Cassandra</li>
+    <li>Redis</li>
+    <li>Firebase</li>
+  </ul>
+
+</section>
+<!--  -->
+
+
+<!-- CONNECT -->
+<section class="section connect">
+  <h2>Let’s Connect</h2>
+
+  <p>
+  Open to entry-level and transition-focused opportunities in
+  Data Engineering, environmental data systems, sustainability analytics,
+  and public-sector technology initiatives.
+  </p>
+
+  <div class="connect-actions">
+
+    <a class="btn" href="https://github.com/kimmyridout" target="_blank">
+      🐙 GitHub
+
+    </a>
+
+    <a class="btn btn-outline" href="https://www.linkedin.com/in/kim-ridout-50b32a196" target="_blank">
+      💼 LinkedIn
+    </a>
+
+    <a class="btn btn-outline" href="mailto:kimmyridout@gmail.com">
+      📧 Email Me
+    </a>
+
+  </div>
+</section>
+
+<!-- end of page -->
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

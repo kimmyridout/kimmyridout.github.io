@@ -1,44 +1,30 @@
-<!--README.md for kimmyridout.github.io-->
+<!--README.md for kimmyridout.github.io: 
+  README = describes the repo/documentation/overview
+  HTML files = Website
+  JS = behavior 
+  CSS = styling-->
 
-<!-- my profile image -->
-<img src="profile.jpg" width="160"
-     style="border-radius: 50%; object-fit: cover; box-shadow: 2px 2px 8px rgba(0,0,0,0.15);" />
+# Kim Ridout Portfolio Website
 
-<!-- name -->
-<!-- # Kim Ridout  -->
-<br>
-<!-- break for spacing -->
-<br>
+Personal portfolio website hosted via GitHub Pages.
 
-<!-- add an about paragraph when ready...  -->
-<p><em>About section coming soon...</em></p>
+## Live Site
+https://kimmyridout.github.io/
 
-<!-- double break for spacing -->
-<br><br>
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
 
-<!-- List my projects -->
-<h2>Projects</h2>
+## Purpose
+This repository contains my personal portfolio website showcasing:
+- Data engineering projects
+- Python, SQL, and API work
+- Flask web applications
+- Technical learning notes
 
-<ul>
-  <li>
-    <a href="https://kimmyridout.github.io/PCDE-Activity-9.1/">
-      PCDE-Activity 9.1
-    </a>
-  </li>
-
-  <li>
-    <em>Additional projects coming soon...</em>
-  </li>
-</ul>
-
-<!-- double break for spacing -->
-<br><br>
-
-<!-- Contact Information -->
-<h2>Contact</h2> 
-
-<p>
-  <a href="https://github.com/kimmyridout">GitHub</a> |
-  <a href="mailto:kimmyridout@gmail.com">Gmail</a> |
-  <a href="https://www.linkedin.com/in/kim-ridout-50b32a196">LinkedIn</a>
-</p>
+## Structure
+- `/assets` → images, documents, scripts
+- `/projects` → project pages
+- root HTML files → main site pages

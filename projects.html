@@ -1,0 +1,89 @@
+<!-- PROJECTS LANDING PAGE -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="logo">Portfolio</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <!-- <a href="notes.html">Notes</a> -->
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <button id="theme-toggle">🌙 Dark Mode</button>
+</header>
+
+<h1>Projects</h1>
+
+<button class="filter-btn" data-filter="all">All</button>
+<button class="filter-btn" data-filter="prediction">Prediction Models</button>
+<button class="filter-btn" data-filter="time-series">Time Series</button>
+<!-- <button class="filter-btn" data-filter="activity">Activities</button> -->
+
+<!-- Housing Price Prediction Project Card -->
+<div class="card" data-category="prediction">
+  <img src="assets/images/housing_price_prediction_models.png" class="project-thumb" style="width:300px; height:auto;" />
+
+  <h3>Housing Price Prediction Using Linear Regression</h3>
+
+  <p>
+    Developed and evaluated four linear regression models to predict housing sale prices using different feature selection strategies. 
+    The study compared correlation-based, random, least-correlated, and domain-informed feature selection approaches to assess 
+    predictive accuracy, model robustness, and generalization performance.
+  </p>
+
+  <p>
+    The strongest-performing model achieved an <strong>R² of 0.85</strong> on training data and <strong>0.82</strong> on unseen test data, demonstrating strong predictive accuracy and generalization performance.
+  </p>
+
+  <p>
+    <strong>Tools:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib, Jupyter Notebook
+  </p>
+
+  <div class="project-links">
+        <!-- <a href="projects/housing_price_prediction_models.html"> -->
+          <!-- View Details →
+        </a> -->
+<!--  -->
+        <a
+          href="https://github.com/kimmyridout/housing-price-prediction-linear-regression"
+          target="_blank"
+          rel="noopener noreferrer"
+        > 
+        <br> 
+          GitHub Repo →
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Placeholder -->
+    <div class="card" data-category="time-series">
+      <h3>Additional Projects Coming Soon</h3>
+
+      <p>
+      Additional projects are currently being prepared for publication to this portfolio.
+      </p>
+
+      <p>
+       Recent completed work includes exploratory analytics, database projects, and cloud-based data workflows.
+     </p>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

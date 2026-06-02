@@ -137,6 +137,8 @@ a:hover {
 
 .profile-pic-large {
   width: 220px;
+  height: 280px;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
 }

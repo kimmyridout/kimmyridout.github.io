@@ -31,7 +31,12 @@
 
 <!-- Housing Price Prediction Project Card -->
 <div class="card" data-category="prediction">
-  <img src="assets/images/housing_price_prediction_models.png" class="project-thumb" style="width:300px; height:auto;" />
+      
+  <div class="project-images">
+      <img src="assets/images/housing_predictions/fig02_log_saleprice_distribution.png" alt="Housing Price Distribution">
+      <img src="assets/images/housing_predictions/housing_price_prediction_models.png" alt="Primary Model Performance">
+      <img src="assets/images/housing_predictions/fig07_primary_model_residuals.png" alt="Primary Model Residuals">
+    </div>
 
   <h3>Housing Price Prediction Using Linear Regression</h3>
 
@@ -68,17 +73,56 @@
 
     </div>
 
-    <!-- Placeholder -->
+<!-- Retail Sales Analysis Project Card -->
     <div class="card" data-category="time-series">
-      <h3>Additional Projects in Development</h3>
+
+      <div class="project-images">
+        <img src="assets/images/retail_sales/Figure_8.AllRetailPLOT_2016-2018-2020_Comparison.png" alt="Retail Sales Trends">
+        <img src="assets/images/retail_sales/Figure_14.Books_3-month_rolling_avg_sales_2016-2020.png" alt="Rolling Average">
+        <img src="assets/images/retail_sales/Figure_12.PercentChangeAnnualSales_Womens_Mens_All_Clothing.png" alt="Percent Change in Annual Sales">
+      </div>
+
+      <h3>Time Series Analysis of U.S. Retail Sales (2010–2020)</h3>
+
+      <p>Developed an end-to-end data engineering and analytics pipeline to analyze U.S. retail sales trends using the 
+        Monthly Retail Trade Survey (MRTS). Designed a relational MySQL database, performed ETL processing of multi-year 
+        datasets, and applied SQL and Python-based time series analysis to identify long-term trends, seasonality, and 
+        COVID-19 impacts across retail sectors.</p>
+
+      <p>
+       The analysis revealed distinct long-term divergence across retail sectors, with consistent growth in health-related 
+       categories and sustained decline in book retailing. Strong seasonal patterns were identified across most categories, 
+       and the impact of COVID-19 in 2020 produced a sharp, measurable disruption in monthly retail sales trends across multiple sectors.
+     </p>
+
+    <p>
+      <strong>Tools:</strong> Python, Pandas, NumPy, Matplotlib, Jupyter Notebook, SQL, MySQL, MySQL Workbench
+    </p>
+  <div class="project-links">
+        <!-- <a href="projects/housing_price_prediction_models.html"> -->
+          <!-- View Details →
+        </a> -->
+<!--  -->
+        <a
+          href="https://github.com/kimmyridout/retail-sales-time-series-analysis.git"
+          target="_blank"
+          rel="noopener noreferrer"
+        > 
+        <br> 
+          GitHub Repo →
+        </a>
+
+      </div>
+    </div>
+
+        <!-- Placeholder -->
+    <div class="card" data-category="all">
+      <h3>Additional Projects are in Development</h3>
 
       <p>
       Additional data engineering and analytics projects are currently in progress and will be published as they are completed through MIT xPRO coursework and independent work.
       </p>
 
-      <p>
-       Recent completed work includes exploratory analytics, database projects, and cloud-based data workflows.
-     </p>
     </div>
 
   </section>

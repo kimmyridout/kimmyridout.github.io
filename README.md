@@ -1,30 +1,21 @@
-<!--README.md for kimmyridout.github.io: 
-  README = describes the repo/documentation/overview
-  HTML files = Website
-  JS = behavior 
-  CSS = styling-->
+# Kim Ridout Professional Portfolio
 
-# Kim Ridout Portfolio Website
+This repository contains Kim Ridout's professional portfolio, with a focus on environmental systems, program management, data integration, and decision support.
 
-Personal portfolio website hosted via GitHub Pages.
+## Primary pages
 
-## Live Site
-https://kimmyridout.github.io/
+- `index.html` — professional introduction
+- `experience.html` — experience, education, and credentials
+- `featured.html` — selected initiatives and technical coursework
+- `perspective.html` — professional approach, collaboration, and working perspective
+- `contact.html` — public contact options
 
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages
+The site uses static HTML, CSS, and JavaScript. It includes responsive navigation and a persistent light/dark theme preference.
 
-## Purpose
-This repository contains my personal portfolio website showcasing:
-- Data engineering projects
-- Python, SQL, and API work
-- Flask web applications
-- Technical learning notes
+## Local preview
 
-## Structure
-- `/assets` → images, documents, scripts
-- `/projects` → project pages
-- root HTML files → main site pages
+Open `index.html` directly in a browser, or serve the repository with a simple local web server.
+
+## Deployment
+
+The site is designed for GitHub Pages and is published from this repository's configured Pages branch.

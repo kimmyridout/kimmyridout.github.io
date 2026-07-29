@@ -1,221 +1,80 @@
-<!-- HOME LANDING PAGE  -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Kim Ridout | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Environmental program and project manager integrating data engineering, geospatial technologies, and systems thinking into environmental and public-interest work.">
+  <title>Kim Ridout | Environmental Systems &amp; Program Management</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="logo">Portfolio</div>
-  <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="experience.html">Experience</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <button id="theme-toggle">🌙 Dark Mode</button>
-</header>
+  <header class="site-header">
+    <a class="logo" href="index.html">Kim Ridout</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+    <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="featured.html">Featured</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="theme-toggle" type="button" aria-label="Switch to dark mode">Dark mode</button>
+  </header>
 
-<!-- page container start -->
-<div class="page-container">
-
- <!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-left">
-    <h1>Kim Ridout</h1><p class="hero-credentials">M.S. | PMP® | REM®</p>
-    
-    <h3>
-    Data Analytics & Program Operations Professional
-    </h3>
-    <h4 class="hero-tagline">
-    12+ years of experience in data analytics, reporting, and environmental & 
-    regulatory public-sector programs
-    </h4>
-
-    <p>
-    Experienced in transforming environmental, operational, and community data 
-    into executive reporting, planning frameworks, and decision-support tools.
-    </p>
-    <p>
-    Currently completing the MIT xPRO Professional Certificate in Data Engineering, 
-    focused on Python, SQL, ETL pipelines, APIs, databases, and cloud technologies.
-    </p>
-
-<!-- RESUME -->
-    <div class="hero-actions">
-      <a class="btn" href="assets/docs/resume_260607.pdf" target="_blank">
-        View Resume
-      </a>
-      <a class="btn btn-outline"
-         href="assets/docs/resume_260607.pdf"
-         download>
-        Download Resume
-      </a>
-      <a class="btn btn-outline" href="experience.html">
-        View Experience
-      </a>
-    </div>
-  </div>
-<!-- end hero-left -->
-
-<!-- PROFILE PICTURE -->
-  <div class="hero-right">
-    <img src="assets/images/profile.png"
-         class="profile-pic-large" />
-<!-- end profile picture -->
-
-<!-- CORE Strengths -->
-    <div class="quick-card">
-      <h4>Core Strengths</h4>
-      <p>
-        Program Management<br>
-        Environmental & Regulatory Systems<br>
-        Stakeholder Engagement<br>
-        Data-Informed Decision Support
-      </p>
-    </div>
-<!-- end quick card -->
-
-  </div>
-</section>
-<!-- end hero -->
-
-<!-- FEATURED PROJECTS -->
-<section class="section">
-  <h2>Featured Initiatives & Projects</h2>
-  <div class="card-grid">
-
-<!-- AWQ -->
-   <div class="card">
-      <h3>📊 AWQ Site Prioritization System</h3>
-        <p>
-        Risk-based regulatory prioritization framework supporting agricultural water quality compliance and watershed protection
-        </p>
-          <ul>
-            <li>Designed and implemented the TTWQ prioritization framework</li>
-            <li>Expanded regulated inventory from ~300 to 1,600+ sites</li>
-            <li>Integrated watershed, inspection, and operational data into a scalable decision-support system</li>
-          </ul>
-        <!-- <a href="projects.html">
-          View AWQ Case Study →
-        </a> -->
+  <main>
+    <section class="hero page-container" aria-labelledby="home-heading">
+      <div class="hero-copy">
+        <p class="eyebrow">Kim Ridout, M.S., PMP®, REM®</p>
+        <h1 id="home-heading">Program and Project Manager with an Environmental Background</h1>
+        <p class="lede">I am a program and project manager with more than 12 years of experience across environmental, regulatory, sustainability, and public-sector programs, including approximately six years in supervisory and program leadership roles.</p>
+        <p>My work includes leading complex public-sector initiatives, coordinating interdisciplinary teams, and translating environmental priorities into practical programs, processes, reporting, and public-facing work. I am increasingly integrating data engineering, analytics, GIS, and technical systems into that practice—expanding how I can help people, programs, and organizations make sense of complexity and move useful work forward.</p>
+        <p>After recently relocating back to my home state of Texas, I'm excited to begin the next chapter of my career. I'm seeking opportunities where I can contribute my experience, continue learning, and support the work of a collaborative team. I look forward to bringing curiosity, reliability, and a thoughtful approach to new challenges.</p>
       </div>
+      <figure class="portrait">
+        <img src="assets/images/profile.png" alt="Portrait of Kim Ridout">
+      </figure>
+    </section>
 
-<!-- WATER WAYS -->
-    <div class="card">
-      <h3>🌊 Water Ways Report</h3>
-      <p>
-        Regional Assessment of Drought Management and Water Use
-        Best Practice Strategies 
-      </p>
-      <ul>
-        <li>Led coordination of technical consultants and stakeholder engagement activities</li>
-        <li>Synthesized technical analysis into regional water resilience strategies</li>
-        <li>Led final report development provided to the County Board of Supervisors</li>
-      </ul>
-      <a
-        href="https://engage.sandiegocounty.gov/water-ways-report"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Read the Report →
-      </a>
+    <section class="section section-tint" aria-labelledby="featured-heading">
+      <div class="page-container featured-summary">
+        <h2 id="featured-heading">Featured Initiatives &amp; Projects</h2>
+        <ol>
+          <li>
+            <h3>Lighthouse Curation</h3>
+            <p class="featured-date">2026–Present</p>
+            <p>An evolving independent practice for developing open projects and publications that connect environmental systems, geospatial information, data integration, and knowledge curation.</p>
+          </li>
+          <li>
+            <h3>Agricultural Water Quality Program Site Prioritization System</h3>
+            <p class="featured-date">2020–2023</p>
+            <p>A data-informed framework that connected environmental risk, regulatory priorities, and program operations to guide inspection planning and resource allocation.</p>
+          </li>
+          <li>
+            <h3>Water Ways Report</h3>
+            <p class="featured-date">2023–2025</p>
+            <p>A cross-departmental regional water resilience initiative that brought technical analysis, stakeholder perspectives, and public input into a coherent public-facing report.</p>
+          </li>
+          <li>
+            <h3>Food Justice Community Action Plan</h3>
+            <p class="featured-date">2024–2026</p>
+            <p>A collaborative County initiative translating extensive community input into actionable pathways for equitable food access, public health, and sustainability.</p>
+          </li>
+          <li>
+            <h3>MIT xPRO Selected Coursework</h3>
+            <p class="featured-date">2026</p>
+            <p>Selected technical work demonstrating practical applications of Python, SQL, ETL workflows, data analysis, machine learning, and predictive modeling.</p>
+          </li>
+        </ol>
+        <a class="btn" href="featured.html">Explore Featured Initiatives &amp; Projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-container">
+      <p>© <span data-current-year></span> Kim Ridout</p>
+      <a href="contact.html">Contact</a>
     </div>
-
-<!-- FOOD JUSTICE -->
-    <div class="card">
-      <h3>🧩 Food Justice Community Action Plan</h3>
-      <p>
-        Countywide initiative focused on equitable food access, food systems,
-        stakeholder engagement, and community-informed planning.
-      </p>
-      <ul>
-        <li>Led 7 community engagement meetings across San Diego County</li>
-        <li>Synthesized 1,500+ public comments into 200+ community ideas</li>
-        <li>Helped develop a countywide action plan presented to the Board of Supervisors</li>
-      </ul>
-      <a
-        href="https://engage.sandiegocounty.gov/food-justice-community-action-plan"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View the Initiative Webpage →
-      </a>
-    </div>
-
-<!-- MIT PROJECTS -->
-    <div class="card">
-      <h3>💻 Technical Data Projects</h3>
-      <p>
-        Data engineering projects developed through MIT xPRO coursework and independent study.
-        </p>
-        <ul>
-          <li>Python, SQL, ETL pipelines, and REST APIs</li>
-          <li>Relational, NoSQL, and cloud-based database systems</li>
-          <li>Portfolio expanded regularly as new projects are completed</li>
-        </ul>
-      <a href="projects.html">
-        View Technical Projects →
-      </a>
-    </div>
-
-  </div>
-
-</section>
-<!-- end featured projects -->
-
-<!-- SKILLS LIST -->
-<section class="section">
-  <h2>Technical Skills</h2>
-  <ul class="skills-inline">
-    <li>Python</li>
-    <li>SQL</li>
-    <li>REST APIs</li>
-    <li>ETL Pipelines</li>
-    <li>Data Modeling</li>
-    <li>Git & GitHub</li>
-    <li>Flask</li>
-    <li>Azure</li>
-    <li>MySQL</li>
-    <li>MongoDB</li>
-    <li>Cassandra</li>
-    <li>Redis</li>
-    <li>Firebase</li>
-    <li>Environmental Data Systems</li>
-    <li>Decision Support</li>
-    <li>Stakeholder Engagement</li>
-    <li>Program Management</li>
-    <li>Strategic Planning</li>
-  </ul>
-</section>
-<!-- end skills list-->
-
-<!-- CONNECT -->
-<section class="section connect">
-  <h2>Let’s Connect</h2>
-  <p>
-  Interested in opportunities that leverage data engineering, environmental systems expertise,
-  program management, and technology-enabled decision support.
-  </p>
-  <div class="connect-actions">
-    <a class="btn" href="https://github.com/kimmyridout" target="_blank">
-      🐙 GitHub
-    </a>
-    <a class="btn btn-outline" href="https://www.linkedin.com/in/kim-ridout-50b32a196" target="_blank">
-      💼 LinkedIn
-    </a>
-    <a class="btn btn-outline" href="mailto:kimmyridout@gmail.com">
-      📧 Email Me
-    </a>
-  </div>
-</section>
-<!-- end connect -->
-
-<!-- end of page -->
-</div>
-<script src="assets/js/script.js"></script>
+  </footer>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

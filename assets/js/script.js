@@ -1,74 +1,43 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.querySelector("#theme-toggle");
+  const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  // -----------------------------
-  // NAV ACTIVE STATE
-  // -----------------------------
-  const navLinks = document.querySelectorAll(".nav-links a");
-
-  let currentPage = window.location.pathname.split("/").pop();
-  if (!currentPage) currentPage = "index.html";
-
-  navLinks.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
+  function setTheme(isDark) {
+    document.body.classList.toggle("dark-mode", isDark);
+    if (themeToggle) {
+      themeToggle.textContent = isDark ? "Light mode" : "Dark mode";
+      themeToggle.setAttribute(
+        "aria-label",
+        isDark ? "Switch to light mode" : "Switch to dark mode"
+      );
     }
+  }
+
+  setTheme(savedTheme ? savedTheme === "dark" : prefersDark);
+
+  themeToggle?.addEventListener("click", () => {
+    const isDark = !document.body.classList.contains("dark-mode");
+    setTheme(isDark);
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   });
 
-  // -----------------------------
-  // DARK MODE TOGGLE
-  // -----------------------------
-  const themeToggle = document.querySelector("#theme-toggle");
+  const navToggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".nav-links");
 
-  if (themeToggle) {
-    const savedTheme = localStorage.getItem("theme");
+  navToggle?.addEventListener("click", () => {
+    const isOpen = nav?.classList.toggle("is-open") ?? false;
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
 
-    if (savedTheme === "dark") {
-      document.body.classList.add("dark-mode");
-      themeToggle.textContent = "☀️ Light Mode";
-    }
-
-    themeToggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-
-      const isDark = document.body.classList.contains("dark-mode");
-
-      localStorage.setItem("theme", isDark ? "dark" : "light");
-
-      themeToggle.textContent = isDark
-        ? "☀️ Light Mode"
-        : "🌙 Dark Mode";
+  nav?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("is-open");
+      navToggle?.setAttribute("aria-expanded", "false");
     });
-  }
+  });
 
-  // -----------------------------
-  // FILTERING PROJECTS + NOTES
-  // -----------------------------
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const cards = document.querySelectorAll(".card");
-
-  if (filterButtons.length > 0) {
-    filterButtons.forEach(button => {
-      button.addEventListener("click", () => {
-        const filter = button.dataset.filter;
-
-        // remove active state
-        filterButtons.forEach(btn =>
-          btn.classList.remove("active-filter")
-        );
-
-        button.classList.add("active-filter");
-
-        cards.forEach(card => {
-          const category = card.dataset.category;
-
-          if (filter === "all" || category === filter) {
-            card.style.display = "block";
-          } else {
-            card.style.display = "none";
-          }
-        });
-      });
-    });
-  }
-
+  document.querySelectorAll("[data-current-year]").forEach((element) => {
+    element.textContent = String(new Date().getFullYear());
+  });
 });
